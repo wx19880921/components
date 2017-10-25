@@ -1,0 +1,185 @@
+/**
+  * Compressed Reset
+  */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+/**
+  * Basic
+  */
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	cursor:default;
+}
+textarea {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+}
+a {
+    color:#0066cc;
+}
+a:hover {
+    color:#ff0000;
+}
+/**
+  * This is for flexible content of template use. You can just put the class name "flexible_layout" into the attribute of body tag.
+  */
+.flexibleLayout .pageWrapper {
+	width:100%;
+}
+.flexibleLayout .pageHeader {    
+    margin:0 auto;
+    min-width:1230px;
+    position:relative;	
+    z-index:4;
+}
+.pageHeader .productBanner {
+    height: 61px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.pageHeader .productBanner a {
+    display:inline-block;
+    height: 60px;    
+}
+.flexibleLayout .container {
+    margin:0 auto;
+	min-width:1230px;
+}
+/**
+  * The infomation and a few options of Header.
+  */
+.headerInformation{
+    height:22px;
+    position:absolute;
+    text-align:center;
+	top:20px;
+    right:25px;    
+}
+.headerInformation li { 
+    border-left:1px solid #d6e2f0;
+	color:#000;
+    display:inline;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height:24px;
+	padding:0 4px 0 8px;
+}
+.headerInformation li.loginName {
+	border:none; 
+}
+.headerInformation a {
+    color:#0066cc;
+}
+.headerInformation a:hover {
+    color:#ff0000;
+    text-decoration:none;	
+}
+/**
+  * Page Body
+  */
+.page_body {
+	padding:0px 25px;   
+}
+.main_content {
+    clear:both;
+    margin:0 auto;
+    padding: 0px;
+	position:relative;
+    zoom:1;
+}
+.main_content:after {
+    clear:both;
+    content:".";
+    display:block;
+    height:0;
+    visibility:hidden;
+}
+h2.pageTitle{
+    border-bottom:2px #cc1414 solid;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+    height:27px;
+    margin-bottom:15px;	
+    /*min-width: 1180px; for reactive*/
+	padding-top:4px;
+}
+h2.pageTitle div{
+	float:left;
+}
+h2.pageTitle span{
+	float:left;
+	margin-right:5px;
+}
+.tmBold{
+	font-weight: bold;
+}
+/**
+  * Page Breadcrumbs
+  */
+.breadcrumbs {
+	height:28px;
+	line-height:28px;
+    dispdlay:inline;
+    fldoat:left;
+    paddding:8px 0px 7px 0px;
+}
+.breadcrumbs li{
+    display:inline;
+	font-size:11px;
+	font-weight:normal;
+}
+.breadcrumbs a{ 
+    color:#0066cc;
+}
+.breadcrumbs a:hover{
+    color:#ff0000;
+    text-decoration:none;
+}
+/**
+  * Online Help
+  */
+.online_help {
+    float: right;    
+	width:22px;
+	height:22px;
+	margin-top:-25px;
+	display:none;
+}
+.online_help a{
+	width:22px;
+	height:22px;
+	display: block;
+}
+/**
+  * Login Page
+  */
+.product_logo {
+	background: transparent url('../images/product_logo.png') no-repeat scroll center center;
+	height: 60px;
+	width: 100%;
+	padding: 0;
+	border-bottom: 3px solid #CC0000;
+}
+/**
+ * Product Style Sheet
+ * This CSS file is a base style for comment style.
+ **/
+div.column {
+    float:left;
+}
+div.column.top {
+    width:100%;
+}
+div.column.left {
+    width:30%;
+}
+div.column.middle {
+   width:60%;
+}
+div.column.right {
+   width:30%;
+}
+
+ 

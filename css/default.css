@@ -1,0 +1,110 @@
+
+@media screen and (min-width: 320px) and (max-width: 1024px){
+    .nav-tabs > li {
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 1025px){
+    
+}
+.breadcrumb {
+    background: #ffffff;
+    padding: 15px 15px 15px 25px;;
+}
+.main-container ul.description {
+    margin-bottom: 12px;
+}
+.main-container ul.description:not(:first-child) {
+    margin-top: 36px;
+}
+.main-container h5:not(:first-child) {
+    margin-top: 40px;
+}
+.main-container header {
+    padding: 0 0 0 24px;
+}
+.main-container nav {
+    padding: 0;
+}
+.main-container .site-header .dropdown-toggle {
+    margin-top: 0;
+}
+.main-container .site-header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    /*height: 64px;*/
+    margin-bottom: 0;
+    position: relative;
+}
+.main-container .fixed-example {
+    border: 1px solid #ccc;
+    height: 350px;
+    overflow-y: auto;
+    width: 100%;
+}
+.main-container .fixed-top-content {
+    background-color: #fff;
+    /*background-image: url("images/innerpage.png");*/
+    background-repeat: no-repeat;
+    height: 687px;
+}
+.main-container .vertical-nav-example {
+    border: 1px solid #ccc;
+    height: 342px;
+    padding-left: 64px;
+    position: relative;
+    transition: all 0.15s ease 0s;
+}
+.main-container .vertical-nav-example .navigation {
+    bottom: inherit;
+    height: 340px;
+    position: absolute;
+}
+.main-container .nav-icon-getting-home {
+    /*background-image: url("images/get_start.png");*/
+}
+.main-container .nav-icon-styles {
+    /*background-image: url("images/type.png");*/
+}
+
+.navbar div.logo_s {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 15px 0px 0px 10px;
+    font-size: 1.4em;
+    height: 32px;
+    line-height: 39px;
+    float: left;
+    display: none;
+}
+
+.navbar-header{ display: none;}
+.navbar-default .navbar-toggle{ margin:23px 10px 18px 10px;  border-color: #db3d44; background: #db3d44;}
+.navbar-default .navbar-toggle:hover,
+
+
+.navbar-default .navbar-collapse{ }
+.navbar .container{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.collapse.open{
+    display: block;
+}
+.breadcrumb.with-line{
+    /*padding-left: 24px;*/
+}
+
+.progress-example, .progress-buffered-example, .indeterminate-determinate-example, .progress-bar-color-example {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.progress-example .progress-warpper, .progress-buffered-example .progress-warpper, .indeterminate-determinate-example .progress-warpper, .progress-bar-color-example .progress-warpper {
+    display: table-row;
+    height: 100%;
+}
+.progress-example .progress-container, .progress-buffered-example .progress-container, .indeterminate-determinate-example .progress-container, .progress-bar-color-example .progress-container {
+    display: table-cell;
+    vertical-align: middle;
+}

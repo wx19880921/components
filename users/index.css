@@ -1,0 +1,1538 @@
+/*!
+ * VMI webconsel v2
+ * VMI webconsol user index css
+ * Author Gannicus Wang
+ */
+
+@media screen and (min-width: 320px) and (max-width: 1024px){
+	#webConsole .ztree{
+		transform: scale(2);
+		transform-origin: 0 0 0;
+	}
+}
+@media only screen and (min-width: 1025px){
+}
+/* Table specific */
+.tmGrid {
+	background: #FFF;
+	/*border: 1px #b2b2b2 solid;*/
+	border: 1px solid #B2B2B2;
+	margin-top: 0!important;
+	padding-right: 10px;
+	table-layout: fixed;
+	width: 100%;
+	min-width: 90%;
+}
+/* Misc */
+.tmGrid td {
+	/*
+	overflow: hidden;
+	white-space: nowrap;
+	Modify on 2013-1-11 by Yong
+	*/
+	word-wrap: break-word;
+	word-break: normal;
+}
+.tmGrid .clickable {
+	cursor: pointer;
+}
+/* Sizing row */
+.tmGrid thead tr.sizing_row, .tmGrid thead .sizing_row th {
+	border: 0px;
+	height: 0px;
+	line-height: 0px;
+	margin: 0px;
+	overflow: none;
+	padding: 0px;
+}
+.tmGrid thead .sizing_row th:first-child {
+	width: 25px;
+}
+/* Behavior button row */
+.mozilla .tmGrid tr.behavior_button th {
+	background: #f5f5f5;
+	height: 29px;
+	line-height: 29px;
+}
+.tmGrid tr.behavior_button th {
+	background: #f5f5f5;
+	height: auto;
+	line-height: 28px;
+}
+.tmGrid tr.behavior_button th ul {
+	height: auto;
+}
+.tmGrid tr.behavior_button th ul button {
+	/*height: 29px;*/
+}
+.tmGrid tr.behavior_button th ul button span {
+	height: 22px;
+	line-height: 22px;
+}
+.tmGrid tr.behavior_button .item_list{
+	border-radius: 3px;
+	font-size: 12px;
+	line-height: 18px;
+	padding: 4px 12px;
+}
+
+/* Button ICON IMAGES */
+
+.panel .button_refresh {
+	background: url(../images/refresh_icon.png) no-repeat 3px 2px;
+}
+.panel .button_setting{
+	background: url(../images/icon_preference.png) no-repeat;
+}
+.panel .button_alert{
+	background: url(../images/icon_alertuser.png) no-repeat;
+}
+
+.panel .button_addgroup {
+	background: url(../images/icon_user_group_add.png) no-repeat;
+}
+.panel .button_export {
+	background: url(../images/icon_export.png) no-repeat;
+}
+.panel .button_adduser {
+	background: url(../images/icon_user_add.png) no-repeat;
+}
+.panel .button_edit_user {
+	background: url(../images/icon_edit.png) no-repeat;
+}
+.panel .button_delete_user {
+	background: url(../images/icon_delete.png) no-repeat;
+}
+.panel .button_delete_group {
+	background: url(../images/icon_delete.png) no-repeat;
+}
+.panel .button_enable_users {
+	background: url(../images/icon_enable_user.png) no-repeat;
+}
+.panel .button_disable_users {
+	background: url(../images/icon_disable_user.png) no-repeat;
+}
+.panel .button_delete_users {
+	background: url(../images/icon_delete.png) no-repeat;
+}
+.panel .button_resend_invitation{
+	background:url(../images/icon_resend_invitation.png) no-repeat;
+}
+.panel .button_importfile {
+	background: url(../images/icon_user_group_add.png) no-repeat;
+}
+
+/* General behavior CSS */
+.tmGrid .behavior_button ul.button_group .list_container {
+	background-position: 3px center;
+	border: 1px solid #F5F5F5;
+	color: #000000;
+	cursor: pointer;
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	margin-bottom: 0px;
+	margin-top: -1px;
+	padding: 2px 5px;
+	padding-bottom: 0px;
+	padding-left: 25px;
+	padding-top: 0px;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-o-user-select: none;
+}
+.tmGrid .behavior_button ul.button_group .list_container.hover {
+	border: 1px solid #999999;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+.tmGrid .behavior_button ul.button_group .list_container:hover {
+	border: 1px solid #999999;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+.tmGrid .behavior_button ul.button_group .button_disabled {
+	cursor: default;
+	filter: alpha(opacity=40);
+	opacity: 0.4;
+}
+.tmGrid .behavior_button ul.button_group .button_disabled span.list_container:hover {
+	border: 1px solid #F5F5F5;
+	cursor: default;
+}
+.tmGrid .behavior_button ul.button_group {
+	float: left;
+	margin-top: 2px;
+	padding-right: 4px;
+}
+.tmGrid .behavior_button ul.button_group div {
+	float: left;
+	margin-left: 4px;
+	padding-right: 7px;
+}
+.tmGrid .behavior_button ul.button_group div:last-child {
+	background: none;
+}
+.tmGrid .button_div{
+	display: inline-block;
+	vertical-align: middle;
+}
+.button_div + .button_div{
+	margin-left: 8px;
+}
+/* Search box */
+.tmGrid .search_bar .display_filters {
+	float: left;
+}
+.tmGrid .search_box .searchBox {
+	background: url(../images/icon_search2.png) no-repeat right -1px;
+	background-color: #ffffff;
+	border: 1px solid #AAAAAA;
+	float: right;
+	font-family: Arial;
+	font-size: 12px;
+	line-height: 16px;
+	margin-bottom: 4px;
+	margin-right: 20px;
+	margin-top: 6px;
+	padding-left: 2px;
+	padding-right: 20px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+.panel .searchBox.normal {
+	background:url(../images/icon_search.png) no-repeat right 0px;
+}
+
+.tmGrid .search_box .searchBox.active {
+	background: url(../images/icon_close.png) no-repeat right -15px #FFF;
+}
+/*Panel Component*/
+.panel{
+	border: 1px solid #B2B2B2;
+    clear: both;
+}
+.panel h4.title{
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #DCDCDC;   
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 28px;
+    padding-left: 10px;    
+}
+.panel h4.fixtitle{background-color:transparent; padding-left:10px;font-size: 13px;}
+.action_command{
+	font-weight:normal;
+	font-size: 12px;
+	padding-left:15px;
+}
+.panel div.content .panel-bold{
+    font-weight:bold;
+}
+/*Specific*/
+.panel.versionDetails {
+    margin-bottom: 10px;
+}
+
+
+.panel dl.detailLists dd{
+    padding-left: 150px;
+    border-bottom:1px #dcdcdc solid;	
+    /*position: relative;	*/
+}
+
+.panel div.content {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	/*padding: 10px;*/
+}
+.panel div.content ul.sections {
+	list-style: none;
+	margin: 0px;
+	padding: 0 0 10px 0px;
+}
+/*Specific*/
+.panel.productInfo{
+    margin-bottom:10px;
+}
+.panel.productInfo div.content, .panel.license div.content {	
+   /* padding: 0px 10px;*/
+}
+.panel dl.detailLists dt, .panel dl.detailLists dd{
+    min-height: 28px;
+    line-height: 28px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;			
+    white-space:nowrap;
+}     
+.panel dl.detailLists dt{			
+    font-weight: bold;
+    float: left;
+}
+.panel dl.detailLists dd{
+    padding-left: 150px;
+    border-bottom:1px #dcdcdc solid;	
+    /*position: relative;	*/
+}
+.panel dl.detailLists dd:last-child{
+    border-bottom: none;
+}
+.panel dl.detailLists dd.last{
+    border-bottom: none;
+}
+.panel .panel-heading {
+    padding: 0;
+}
+
+
+/*********************/
+
+.panel .ui-layout-pane {
+	border:none
+}
+.panel .ui-layout-west {
+	border-left: none;
+	border-top: none;
+	border-right: none;
+	padding: 10px;
+}
+.panel .ui-layout-center {
+	border-top: none;
+	padding: 0px;
+}
+
+.ui-corner-all {
+/* cover firefox corder error.*/
+    border-radius: 0 0 0 0;
+}
+/***** right tab content*********/
+.textarea {
+    border: 1px solid #CCCCCC;
+    height: 150px;
+	overflow-y:auto;
+	overflow-x:hidden;
+    width: 256px;
+}
+.noDataToDisplay{
+	width:100%; 
+	height:22px;
+	line-height:22px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.tmGrid thead .sizing_row .acol_1{
+	width:90px !important;
+}
+.tmGrid thead .sizing_row .p_col1{
+	width:200px !important;
+}
+/*basic info*/
+#secondli{
+	padding:10px;
+}
+#secondli dl {
+	margin-top: 2px;
+	/*width:500px;*/
+	clear:both;
+}
+#secondli dl dt {
+	width: 195px;
+	height: 26px;
+	line-height: 26px;
+	float: left;
+	font-weight:bold;
+	font-size: 12px;
+}
+.groupsummary dl dt{
+	width:150px !important;
+}
+#secondli dl dd {
+	/*width: 350px;*/
+	/*height: 26px;*/
+	line-height:26px;
+	float: left;
+}
+#secondli dl:last-child{
+	clear:both;
+}
+#Setting_row_container td span img{
+	max-width:60px;
+	max-height:60px;
+	padding:10px;
+}
+#enableLink a{
+	color:#0066CC;
+}
+.disableLink{
+	color:#666666;
+	cursor:default;
+}
+a.disableLink:hover{
+	color:#666666;
+}
+#user_status img{
+	vertical-align:middle;
+}
+
+#sort_title_list th.sort{
+	cursor:pointer;
+}
+.lstooltip{vertical-align:middle}
+/*rewrite tree icon*/
+.ztree li span.button.pIcon01_ico_open,.ztree li span.button.pIcon01_ico_close{margin-right:2px; background: url(../images/icon_group.png) no-repeat scroll 0 0 transparent; vertical-align:top; *vertical-align:middle}
+.ztree li span.button.icon01_ico_docu{margin-right:2px; background: url(../images/icon_user.png) no-repeat scroll 0 0 transparent; vertical-align:top; *vertical-align:middle}
+/*fixed layout.jquery*/
+.content.content-closed{
+	background:url(../images/toggle-rt.gif) no-repeat;
+	height:35px;
+}
+
+#uploadDiv ul{
+	padding:30px 10px 10px 30px;
+}
+#uploadDiv ul li{
+	text-align:left;
+	line-height:14px;
+}
+#uploadDiv div.ddtip {
+    color: #999999;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+	margin-top:10px;
+}
+/*************************/
+/*******The current page custom CSS*********/
+/***********************/
+.displaynone {
+	display: none;
+}
+.total {
+	float: right;
+	padding-right: 10px;
+	font-weight: normal;
+	font-family: Calibri;
+	font-size: 13px;
+	color: #333333;
+}
+.normaltext {
+	font-family: Calibri;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color: #000000;
+}
+.normaltext14 {
+	font-family: Calibri;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+	color: #000000;
+}
+
+/*
+table, tbody, tr, td {
+	border: 1px solid;
+	vertical-align:auto;
+}
+*/
+.tmGrid thead .sizing_row .col_1{
+	width:30px !important;
+}
+.tmGrid thead .sizing_row .col_2{
+	width:160px;
+}
+.tmGrid thead .sizing_row .col_3{
+	width:210px;
+}
+.tmGrid thead .sizing_row .col_4{
+	width:170px;
+}
+.tmGrid thead .sizing_row .col_5{
+	width:70px;
+}
+.tmGrid thead .sizing_row .col_6{
+	width:70px;
+}
+.tmGrid thead .sizing_row .col_7{
+	width:130px;
+}
+
+.tmGrid thead tr.device_sizing_row, .tmGrid thead .device_sizing_row th {
+	border: 0px;
+	height: 0px;
+	line-height: 0px;
+	margin: 0px;
+	overflow: none;
+	padding: 0px;
+}
+.tmGrid thead .device_sizing_row th:first-child {
+	width: 300px;
+}
+.tmGrid thead .device_sizing_row .acol_1{
+	width:90px !important;
+}
+.tmGrid thead .device_sizing_row .p_col1{
+	width:200px !important;
+}
+.tmGrid thead .device_sizing_row .col_1{
+	width:270px;
+}
+.tmGrid thead .device_sizing_row .col_2{
+	width:135px;
+}
+.tmGrid thead .device_sizing_row .col_3{
+	width:180px;
+}
+.tmGrid thead .device_sizing_row .col_4{
+	width:90px;
+}
+.tmGrid thead .device_sizing_row .col_5{
+	width:150px;
+}
+.tmGrid thead .device_sizing_row .col_6{
+	width:150px;
+}
+.tmGrid thead .device_sizing_row .col_7{
+	width:160px;
+}
+/* Selected/hover row */
+.tmGrid tbody.row_container tr.row_hover {
+	background-color: #e5effa;
+}
+.tmGrid tbody.row_container tr:hover {
+	background: #e5effa;
+}
+.tmGrid tbody.row_container tr.checked:hover {
+	background-color: #e5effa;
+}
+.tmGrid tbody.row_container tr.checked {
+	background-color: #f2f7fc;
+}
+/* Footer row */
+.tmGrid tfoot td {
+	background-color: #f5f5f5;
+	border: none;
+	border-top: 1px #b2b2b2 solid;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	height: 26px;
+	line-height: 25px;
+	padding: 0px;
+	text-align: right;
+}
+.tmGrid th.ckb_cm {
+	padding-top: 3px;
+	text-align: center;
+	width: 20px;
+}
+.tmGrid td.ckb_cm {
+	padding: 0px;
+	padding-top: 3px;
+	text-align: center;
+	width: 20px;
+}
+/* Footer message for empty table */
+.tmGrid .emptyTableMessage {
+	float: left;
+	font: 12px Arial;
+	margin: 10px 30px;
+}
+.tmGrid .emptyTableMessage .emptyTableLink {
+	color: #0066cc;
+	cursor: pointer;
+	text-decoration: underline;
+}
+.tmGrid .emptyTableMessage .emptyTableLink:hover {
+	color: #ff0000;
+}
+.tmGrid .emptyTableMessage .emptyTableMessageText {
+	white-space: normal;
+}
+/* Pagination */
+.tmGrid tfoot td .pagination {
+	float: right;
+	height: 26px;
+	margin: 0px;
+	padding-right: 10px;
+	vertical-align: middle;
+}
+.tmGrid .pagination li {
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	height: 26px;
+	margin-left: 2px;
+	line-height: 26px;
+}
+.mozilla .tmGrid .pagination .pageInput, .mozilla .tmGrid .pagination .per_page {
+	line-height: 25px;
+}
+.tmGrid .pagination .pageInput, .tmGrid .pagination .per_page {
+	line-height: 24px;
+}
+.tmGrid .pagination .btn {
+	background: url(../images/pagination_btn.gif) no-repeat center;
+	cursor: pointer;
+	height: 17px;
+	margin-top: 4px;
+	width: 17px;
+	min-width: 17px;
+	border: none;
+	padding: 8px;
+}
+.tmGrid .pagination .records {
+	background: url("../images/tool_panel_div.png") no-repeat right center;
+	padding-right: 10px;
+}
+.tmGrid .pagination .btn_first {
+	background-position: 0px -204px;
+}
+.tmGrid .pagination .btn.btn_first_hover {
+	background-position: 0px -221px;
+}
+.tmGrid .pagination .btn_first.disabled {
+	background-position: 0px -255px;
+	cursor: default;
+}
+.tmGrid .pagination .btn.btn_prev {
+	background-position: 0px -68px;
+}
+.tmGrid .pagination .btn.btn_prev.disabled {
+	background-position: 0px -119px;
+	cursor: default;
+}
+.tmGrid .pagination .btn.btn_prev_hover {
+	background-position: 0px -85px;
+}
+.tmGrid .pagination .btn_next {
+	background-position: 0px 0px;
+}
+.tmGrid .pagination .btn_next.disabled {
+	background-position: 0px -51px;
+	cursor: default;
+}
+.tmGrid .pagination .btn_next_hover {
+	background-position: 0px -17px;
+}
+.tmGrid .pagination .btn_last {
+	background-position: 0px -136px;
+}
+.tmGrid .pagination .btn_last.disabled {
+	background-position: 0px -187px;
+	cursor: default;
+}
+.tmGrid .pagination .btn_last_hover {
+	background-position: 0px -153px;
+}
+.tmGrid .pagination .pager_current_page {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	height: 14px;
+	vertical-align: middle;
+	width: 25px;
+}
+.tmGrid .pagination .per_page {
+	background: url("../images/tool_panel_div.png") no-repeat left center;
+	padding-left: 5px;
+}
+.tmGrid .pagination .per_page select {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	vertical-align: middle;
+	width: 50px;
+}
+.tmGrid .pagination dt{
+	display: inline-block;
+	font-weight: normal;
+}
+/* Column Headers */
+.tmGrid .header_title th {
+	/*background: url('../images/tmGrid_thead_th_bk.png') repeat-x top left;*/
+	border-left: 1px #b2b2b2 solid;
+	border-bottom: 1px #b2b2b2 solid;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	height: 24px;
+	line-height: 24px;
+	overflow: hidden;
+	text-align: left;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+.tmGrid .header_title th:first-child {
+	border-left: none;
+}
+.tmGrid .header_title th.checkBoxAll {
+	padding: 0px;
+	text-align: center;
+}
+.tmGrid .header_title th.checkBoxAll input.check_all_checkbox {
+	vertical-align: middle;
+}
+.tmGrid .header_title th div {
+	padding-left: 5px;
+}
+.tmGrid .header_title .column_title {
+	/*height: 100%;  fixbug ie edge, table have a black outin border*/
+	overflow: hidden;
+	font-weight: bold;
+}
+.tmGrid .header_title th.sort_asc .column_title {
+	background-image: url(../images/up_16.gif);
+	background-position: right 10px;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.tmGrid .header_title th.sort_desc .column_title {
+	background: url(../images/down_16.gif) no-repeat right;
+	margin-right: 5px;
+	cursor: pointer;
+}
+/* Standard data rows */
+.tmGrid tbody.row_container tr td {
+	border-left: 1px solid #dcdcdc;
+	border-top: 1px solid #dcdcdc;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	height: 24px;
+	line-height: 24px;
+	padding: 0px 5px 0px 5px;
+	vertical-align: middle;
+}
+.tmGrid tbody.row_container tr td:first-child {
+	border-left: none;
+}
+.tmGrid tbody.row_container tr td:first-child.checkBoxAll {
+	padding: 0px;
+	text-align: center;
+}
+.tmGrid tbody.row_container tr.tmAlignTop td {
+	vertical-align: top;
+}
+.tmGrid tbody.row_container tr.tmAlignMiddle td {
+	vertical-align: middle;
+}
+.tmGrid tbody.row_container tr.tmAlignBottom td {
+	vertical-align: bottom;
+}
+.tmGrid tbody.row_container tr td.tmAlignTop {
+	vertical-align: top;
+}
+.tmGrid tbody.row_container tr td.tmAlignLeft {
+	text-align: left;
+}
+.tmGrid tbody.row_container tr td:first-child input.cbx {
+	vertical-align: middle;
+}
+.tmGrid tbody.row_container tr td img {
+	vertical-align: middle;
+}
+.tmGrid tbody.row_container tr td ul.sub_items {
+	margin: 0 -5px;
+}
+.tmGrid tbody.row_container tr td ul.sub_items>li {
+	border-top: 1px solid #e7e7e7;
+	padding: 0px 5px;
+}
+.tmGrid tbody.row_container tr td .sub_item a {
+	color: #0066CC;
+}
+
+
+/*Modal Edit Profile Panel Component*/
+#modalEditProfile{
+	height:140px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+#modalEditProfile ul.detailLists{
+	margin: 0 0 0 10px;
+	padding: 20px 0;
+}
+#modalEditProfile ul.detailLists li {
+	list-style: none;
+	/*height:30px;*/
+	line-height:20px;
+}
+#modalEditProfile ul.detailLists li dt{
+	font-weight:bold;
+	/*display: inline;*/
+	float:left;
+	width: 100px;
+}
+#modalEditProfile ul.detailLists li dd{
+	margin-left:50px;
+}
+#ploicy_name{
+	padding-left:10px;	
+}
+#modalEditProfile ul.detailLists li select{
+	max-width:235px;
+	width:200px;
+	font-size:12px;
+	font-family: Arial, Helvetica, sans-serif;
+ }
+ #parent_group_name{
+ 	font-weight:bold;
+ }
+ 
+ /*Modal Create Group Panel Component*/
+#modalCreateGroup {
+	min-width: 430px;
+	height: 150px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+#modalCreateGroup ul.detailLists {
+	margin: 20px 0 0 10px;
+	padding: 0px;
+}
+#modalCreateGroup ul.detailLists li {
+	height: 25px;
+	line-height: 25px;
+	padding: 5px 0;
+	list-style: none;
+	clear: both;
+}
+#modalCreateGroup ul.detailLists li input[type=text] {
+	width: 244px;
+	font-size: 12px;
+	vertical-align: middle;
+}
+#modalCreateGroup .red {
+	color: #FF0000;
+	font-size: 13px;
+}
+#modalCreateGroup ul.detailLists li dt {
+	float: left;
+	width: 90px;
+}
+#modalCreateGroup ul.detailLists li dd {
+	float: left;
+	width: 250px;
+	margin-left: 0;
+}
+#modalCreateGroup #ddtip {
+	margin-left: 90px;
+	color: #666666;
+	line-height: 15px;
+	font-size: 11px;
+	padding: 0;
+}
+#modalCreateGroup ul.detailLists li select {
+	max-width: 235px;
+	width: 200px;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Modal Create User Panel Component*/
+#modalCreateUser{
+	min-width: 400px;
+	height:250px;
+}
+#modalCreateUser h4.title {
+	/*
+	background-color: #F5F5F5;
+	border-bottom: 1px solid #DCDCDC;
+	height: 28px;
+	line-height: 28px;
+	*/
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left: 10px;
+	font-size: 12px;
+	color: #333333;
+}
+#modalCreateUser div.content {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+/*Sepcific*/
+#modalCreateUser ul.detailLists{
+	margin: 0 0 0 10px;
+	padding: 0px;
+}
+
+#modalCreateUser ul.detailLists li {
+	list-style: none;
+}
+#modalCreateUser ul.detailLists li input {
+}
+#modalCreateUser ul.detailLists li input[type=text] {
+	width: 180px;
+	font-size: 12px;
+	line-height: 12px;
+	margin-left: 0px;
+	/*height:14px;*/
+}
+#modalCreateUser ul.detailLists li select {
+	/*width: 244px;*/
+	font-size: 12px;
+	line-height: 12px;
+	margin-left: 0px;
+	margin-top:4px;
+}
+
+#modalCreateUser ul.detailLists dl {
+	clear:both;
+}
+
+#modalCreateUser ul.detailLists li dt{
+	color: #333333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	width: 100px;
+	height: 26px;
+	line-height: 26px;
+	float: left;
+}
+#modalCreateUser .dd{
+	color: #333333;
+	margin-left:0;
+	font-family: Calibri;
+	font-size: 12px;
+	width: 200px;
+	float: left;
+}
+#modalCreateUser .ddtip {
+	color: #999999;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin-left: 100px!important;
+	clear: both;
+}
+#modalCreateUser .red {
+	color: #FF0000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+#modalImportFile {
+	height:180px;
+}
+#modalImportFile ul{
+	padding:20px;
+}
+#modalImportFile ul li{
+	text-align:left;
+	line-height:14px;
+}
+#modalImportFile div.ddtip {
+	color: #999999;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	margin-top:10px;
+}
+
+/**************/
+
+.tmmsgbox {
+	min-height: 70px;
+	padding-top: 10px;
+	padding-left: 10px;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	margin-bottom: 30px;
+}
+.tmmsgbox.info {
+	border: 1px solid #4c94db;
+	/*background-image: url(../images/icon_info_s.png);*/
+	background-image: url(../images/ready_icon.png);
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	background-color: #EBFAEB;
+	border: #0C3 1px solid;
+}
+.tmmsgbox .msgcontent {
+	width: 50%;
+	text-align: left;
+	margin-left: 67px;
+	margin-top: 5px;/*border: #906 1px solid;*/
+}
+.tmmsgbox div.close_btn, .tmmsgbox2 span.close_btn {
+	background: url("../images/icon_close.png") no-repeat -2px -2px transparent;
+	height: 12px;
+	width: 12px;
+	cursor: pointer;
+	border: 0px solid #333;
+	margin-top: -10px;
+	float: right;
+}
+.tmmsgbox2 span.close_btn {
+	margin-top: 0px;
+}
+.tmmsgbox div.close_btn:hover {
+	background: url("../images/icon_close.png") no-repeat -2px -18px transparent;
+}
+.tmmsgbox div.close_btn:active {
+	background: url("../images/icon_close.png") no-repeat -2px -34px transparent;
+}
+
+.tmmsgbox2 {
+	display:block;
+	color:#000000;
+	padding: 4px 18px 4px 25px;	
+	margin: 0px 0px 3px;	
+	background-position:4px 4px;
+	background-repeat: no-repeat;
+	min-height:16px;
+	position:relative;
+	border-radius:0px;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;	
+}
+.tmmsgbox2 .msgcontent2 {
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	color: #000000;
+	display:block;
+	width:100%;
+	line-height:16px;
+	text-align:left;
+}
+
+.tmmsgbox2.error, .tmmsgbox2.apns_error {
+	border:1px solid #d67575;
+	background-image: url(../images/icon_error_s.png);
+	background-color: #fff3f3;
+}
+.tmmsgbox2.warning,.tmmsgbox2.apns_warning {
+	border:1px solid #ecbe33;
+	background-image: url(../images/icon_warning_s.png);
+	background-color: #ffffdc;
+}
+.tmmsgbox2 span.text_span{
+	white-space: normal;
+	/*float: left;*/
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+
+/*************************/
+/*******The current page custom CSS*********/
+/***********************/
+.displaynone {
+	display: none;
+}
+.total {
+	float: right;
+	padding-right: 10px;
+	font-weight: normal;
+	font-family: Calibri;
+	font-size: 13px;
+	color: #333333;
+}
+.normaltext {
+	font-family: Calibri;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color: #000000;
+}
+.normaltext14 {
+	font-family: Calibri;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+	color: #000000;
+}
+
+
+
+/*modalAlertUser Component*/
+.modal-alertuser{
+	max-width: 90%;
+	width: 840px;
+	/*height:540px;*/
+}
+#modalAlertUser{
+	/*width: 840px;*/
+	/*height:340px;*/
+	overflow-x:hidden;
+	overflow-y:auto;
+	margin:0px;
+}
+#modalAlertUser h4.title {
+    /*
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #DCDCDC;
+    height: 28px;
+    line-height: 28px;
+    */
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    font-size: 12px;
+    color: #333333;
+}
+#modalAlertUser div.content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+/*************************/
+/*******The current page custom CSS*********/
+/***********************/
+#modalAlertUser .displaynone {
+    display: none;
+}
+#modalAlertUser .dt {
+    color: #333333;
+    font-family: Calibri;
+    font-size: 13px;
+    width: 90px;
+    height: 26px;
+    line-height: 26px;
+    float: left;
+}
+#modalAlertUser .ddtip {
+    color: #999999;
+    font-family: Calibri;
+    font-size: 13px;
+    margin-left: 90px;
+    clear: both;
+    max-width:400px;
+}
+#modalAlertUser .margintop_2 {
+    margin-top: -2px;
+}
+#modalAlertUser .marginlist10 {
+    margin-left:10px;
+}
+
+#modalAlertUser .tmGrid .col_2 {
+    width: 200px;
+}
+#modalAlertUser .tmGrid .col_3 {
+    width: 150px;
+}
+#modalAlertUser .tmGrid .col_4 {
+	
+}
+#modalAlertUser .tmGrid .col_5 {
+    width: 100px;
+}
+#modalAlertUser .tmGrid tbody.row_container tr td.tmAlignLeft {
+	/*
+	overflow:inherit;
+	white-space:normal;
+    word-break:normal;
+    word-wrap: break-word;
+	*/
+	text-overflow: ellipsis;
+}
+#modalAlertUser .lstooltip{
+	margin-left: 5px;
+	vertical-align: middle;
+}
+#modalAlertUser .commercial-theme .tm-alert {
+    color: #222222;
+}
+#modalAlertUser .commercial-theme .tm-alert {
+    min-height: 20px;
+    padding: 4px 28px 4px 28px;
+    margin-bottom: 10px;
+    background-color: #ffffdc;
+    background-image: url("../images/i_status_yellow.png");
+    background-position: 6px 6px;
+    background-repeat: no-repeat;
+    border: 1px solid #f5de99;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+}
+#modalAlertUser .commercial-theme .tm-alert-success {
+    color: #222222;
+    background-color: #ebfaeb;
+    background-image: url("../images/icon_ok_s.png");
+    border-color: #bee3be;
+	line-height:20px;
+}
+
+#modalAlertUser .commercial-theme .tm-alert .close {
+    position: relative;
+    top: 0;
+    right: -20px;
+    font-weight: normal \9;
+    line-height: 20px;
+}
+#modalAlertUser .commercial-theme .close:hover, .commercial-theme .close:focus {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+#modalAlertUser .commercial-theme button.close {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+#modalAlertUser .commercial-theme .close {
+    float: right;
+    font-size: 14px;
+   
+    line-height: 14px;
+    color: #000000;
+    text-shadow: 0 1px 0 #ffffff;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+#modalAlertUser .tmmsgbox.info2013 {
+	display:block;
+	color:#000000;
+	padding: 4px 18px 4px 25px;	
+	margin: 3px 0;	
+	background-position:4px 4px;
+	background-repeat: no-repeat;
+	min-height:auto;
+	position:relative;
+	border-radius:0px;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;	
+	border:1px solid #4c94db;
+	background-image: url(../images/icon_info_s.png);
+	background-color: #e6f0fa;
+}
+#modalAlertUser .tmmsgbox span.close_btn {
+    background: url("../images/icon_close.png") no-repeat scroll -2px -2px transparent;
+    border: 0 solid #333333;
+    cursor: pointer;
+    display: block;
+    height: 12px;
+    position: absolute;
+    right: 4px;
+    top: 6px;
+    width: 12px;
+}
+#modalAlertUser .tmmsgbox .msgcontent2013 {
+    color: #000000;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: left;
+    width: 98%;
+}
+
+
+/*modalEditUser Component*/
+#modalEditUser.headerSetting{                        
+    margin-bottom:10px;
+}
+
+#modalEditUser {
+	/*border: 1px solid #B2B2B2;*/
+	clear: both;
+	min-width: 200px;
+}
+#modalEditUser h4.title {
+	background-color: #F5F5F5;
+	border-bottom: 1px solid #DCDCDC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	height: 28px;
+	line-height: 28px;
+	padding-left: 10px;
+}
+#modalEditUser div.content {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding: 10px;
+}
+#modalEditUser div.content ul.sections {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+#modalEditUser div.content .panel-bold {
+	font-weight: bold;
+}
+/*Sepcific*/
+#modalEditUser ul.detailLists li {
+/*
+	height: 25px;
+	line-height: 25px;
+	*/
+}
+#modalEditUser ul.detailLists li input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 12px;
+	margin-left: 0px;
+	/*height:14px;*/
+	vertical-align: middle;
+}
+#modalEditUser ul.detailLists li input[type=text],#modalEditUser ul.detailLists li input[type=password] {
+	width: 180px;
+	/*
+	height: 22px;
+	line-height:22px;
+	color:#333333;
+	border: 1px solid #CCCCCC;
+	*/
+}
+#modalEditUser .buttonGrp{
+    margin-top: 20px;
+}
+/*************************/
+/*******The current page custom CSS*********/
+/***********************/
+#modalEditUser .displaynone {
+	display: none;
+}
+#modalEditUser .title {
+	font-family: Calibri;
+	font-size: 13px;
+	font-weight: bold;
+	color: #333333;
+}
+#modalEditUser #secondli dl {
+	height: 30px;
+	/*_margin-left:20px;*/
+	margin-top: 2px;
+}
+#modalEditUser .dt {
+	color: #333333;
+	font-size: 12px;
+	width: 105px;
+	height: 26px;
+	line-height: 26px;
+	float: left;
+}
+#modalEditUser .ddtip {
+	color: #999999;
+	font-family: Calibri;
+	font-size: 13px;
+	margin-left: 145px;
+	clear: both;
+}
+#modalEditUser .red {
+	color: #FF0000;
+	font-family: Calibri;
+	font-size: 13px;
+}
+#modalEditUser .textarea{
+	width:256px; 
+	height:150px;
+	border: 1px solid #CCCCCC; 
+	overflow:auto;
+}
+
+#modalEditUser .marginlist20{
+	margin-left:20px;
+}
+#modalEditUser .ui-corner-all {
+/* cover firefox corder error.*/
+    border-radius: 0 0 0 0;
+}
+/*Specific*/
+#modalEditUser dl.detailLists dt, #modalEditUser dl.detailLists dd{
+    min-height: 28px;
+    line-height: 28px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;			
+    white-space:nowrap;
+}     
+#modalEditUser dl.detailLists dt{			
+    font-weight: bold;
+    float: left;
+}
+#modalEditUser dl.detailLists dd{
+    padding-left: 150px;
+    border-bottom:1px #dcdcdc solid;	
+    /*position: relative;	*/
+}
+#modalEditUser dl.detailLists dd:last-child{
+    border-bottom: none;
+}
+#modalEditUser dl.detailLists dd.last{
+    border-bottom: none;
+}
+
+
+/*Import Group Component*/
+.modal-importgroup{
+	width: 1040px;
+	/*height:540px;*/
+}
+#modalImportGroup{
+    /*width: 840px;*/
+    height:340px;
+	overflow-x:hidden;
+	overflow-y:auto;
+	margin:0px;
+}
+#modalImportGroup h4.title {
+    /*
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #DCDCDC;
+    height: 28px;
+    line-height: 28px;
+    */
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    font-size: 12px;
+    color: #333333;
+}
+#modalImportGroup div.content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+/*Sepcific*/
+#modalImportGroup ul.detailLists{
+    margin: 0 0 0 10px;
+    padding: 0px;
+}
+
+#modalImportGroup ul.detailLists li {
+    list-style: none;
+}
+#modalImportGroup ul.detailLists li input {
+}
+#modalImportGroup ul.detailLists li input[type=text] {
+    height: 22px;
+    width: 244px;
+    color: #333333;
+    border: 1px solid #CCCCCC;
+    font-size: 12px;
+    line-height: 12px;
+    margin-left: 0px;
+    vertical-align: middle;
+}
+/*************************/
+/*******The current page custom CSS*********/
+/***********************/
+#modalImportGroup .displaynone {
+    display: none;
+}
+#modalImportGroup .dt {
+    color: #333333;
+    font-family: Calibri;
+    font-size: 13px;
+    width: 90px;
+    height: 26px;
+    line-height: 26px;
+    float: left;
+}
+#modalImportGroup .ddtip {
+    color: #999999;
+    font-family: Calibri;
+    font-size: 13px;
+    margin-left: 90px;
+    clear: both;
+    max-width:400px;
+}
+#modalImportGroup .margintop_2 {
+    margin-top: -2px;
+}
+#modalImportGroup .marginlist10 {
+    margin-left:10px;
+}
+
+#modalImportGroup .tmGrid .col_2 {
+    width: 200px;
+}
+#modalImportGroup .tmGrid .col_3 {
+    width: 150px;
+}
+#modalImportGroup .tmGrid .col_4 {
+	
+}
+#modalImportGroup .tmGrid .col_5 {
+    width: 100px;
+}
+#modalImportGroup .tmGrid tbody.row_container tr td.tmAlignLeft {
+	/*
+	overflow:inherit;
+	white-space:normal;
+    word-break:normal;
+    word-wrap: break-word;
+	*/
+	text-overflow: ellipsis;
+}
+#modalImportGroup #sort_title_list th.sort{
+	cursor:pointer;
+}
+
+#modalImportGroup .lstooltip{
+	margin-left: 5px;
+	vertical-align: middle;
+}
+#modalImportGroup select, #modalImportGroup span{
+    font-size: 12px;
+}
+#modalImportGroup .tmGrid td {
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+
+/*edit group*/
+#modalEditGroup{
+	min-width: 500px;
+	height:140px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+#modalEditGroup ul.detailLists{
+	margin: 40px 0 0 10px;
+	padding: 0px;
+}
+#modalEditGroup ul.detailLists li {
+	/*height:25px;*/
+	line-height:20px;
+	padding:5px 0;
+	list-style: none;
+	clear:both;
+}
+#modalEditGroup ul.detailLists li dt{
+	font-weight:bold;
+	/*display: inline;*/
+	float:left;
+	width: 100px;
+}
+#modalEditGroup ul.detailLists li dd{
+	margin-left:50px;
+}
+#modalEditGroup #ploicy_name{
+	padding-left:10px;	
+}
+
+#modalEditGroup ul.detailLists li select{
+	max-width:235px;
+	width:200px;
+	font-size:12px;
+	font-family: Arial, Helvetica, sans-serif;
+ }
+#modalEditGroup #parent_group_name{
+ 	font-weight:bold;
+ }
+ 
+.button_group .button_div:first-child {
+	padding-left: 20px;
+}

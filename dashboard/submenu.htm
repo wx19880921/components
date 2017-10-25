@@ -1,0 +1,84 @@
+        <nav className="navbar navbar-default" role="navigation">  
+            <div className="container-fluid">
+                {/* Brand and toggle get grouped for better mobile display */}
+                <div className="navbar-header">
+                    
+                    <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#VMI_MENU_LIST">
+                        <span className="sr-only">Toggle navigation</span>
+                        <span className="icon-bar"></span>
+                        <span className="icon-bar"></span>
+                        <span className="icon-bar"></span>
+                    </button>
+                    <a className="navbar-brand" href="../dashboard/index.htm">
+                        VMI
+                    </a>      
+                </div>
+
+                {/* Collect the nav links, forms, and other content for toggling */}
+                <div className="collapse navbar-collapse" id="VMI_MENU_LIST">
+                    <ul className="nav navbar-nav">
+                        <li className="active"><a href="#">dashboard</a></li>
+                        <li><a href="#">User</a></li>
+                        <li className="dropdown">
+                            <a href="#" className="dropdown-toggle" data-submenu  data-toggle="dropdown">Apps <span className="caret"></span></a>          
+                            <ul className="dropdown-menu" role="menu">
+                                <li><a href="#" className="dropdown-toggle" data-toggle="dropdown">Action</a></li>
+                                <li className="dropdown-submenu">
+                                    <a tabindex="0">Action</a>                
+                                    <ul className="dropdown-menu">
+                                        <li><a tabindex="0">Sub action</a></li>
+                                        <li className="dropdown-submenu">
+                                        <a tabindex="0">Another sub action</a>
+                                    
+                                        <ul className="dropdown-menu">
+                                            <li><a tabindex="0">Sub action</a></li>
+                                            <li><a tabindex="0">Another sub action</a></li>
+                                            <li><a tabindex="0">Something else here</a></li>
+                                        </ul>
+                                        </li>
+                                        <li><a tabindex="0">Something else here</a></li>
+                                        <li className="disabled"><a tabindex="-1">Disabled action</a></li>
+                                        <li className="dropdown-submenu">
+                                        <a tabindex="0">Another action</a>
+                                    
+                                        <ul className="dropdown-menu">
+                                            <li><a tabindex="0">Sub action</a></li>
+                                            <li><a tabindex="0">Another sub action</a></li>
+                                            <li><a tabindex="0">Something else here</a></li>
+                                        </ul>
+                                        </li>
+                                    </ul>
+                                </li>            
+                                
+                                
+
+
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li className="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li className="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    
+                    <ul className="nav navbar-nav navbar-right">
+                        <li><a href="#">Help</a></li>
+                        <li className="dropdown">
+                        <a href="#" className="dropdown-toggle" data-toggle="dropdown">Root <span className="caret"></span></a>
+                        <ul className="dropdown-menu" role="menu">
+                            <li><a href="#">Reset Password</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Login Log</a></li>
+                            <li className="divider"></li>
+                            <li><a href="#">Login Out</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+
+
+                </div> 
+            </div> 
+        </nav>

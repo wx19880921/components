@@ -1,0 +1,959 @@
+/*Panel Component*/
+@media screen and (min-width: 320px) and (max-width: 1024px){
+	#create_profile .panel ul.detailLists li textarea.settingTextarea {
+		width: 95%;
+	}
+	#create_profile .panel ul.detailLists li input[type=text].settingInputtext {
+		width: 95%;
+	}
+}
+@media only screen and (min-width: 1025px){
+	#create_profile .panel ul.detailLists li textarea.settingTextarea {
+		width: 530px;
+	}
+	#create_profile .panel ul.detailLists li input[type=text].settingInputtext {
+		width: 250px;
+	}
+}
+#create_profile #bluetooth_rule_detail dl {
+    clear: both;
+}
+#create_profile #bluetooth_rule_detail li dt {
+    color: #333333;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    height: 26px;
+    line-height: 26px;
+    width: 130px;
+}
+#create_profile .dd {
+    color: #333333;
+    float: left;
+    font-family: Calibri;
+    font-size: 12px;
+    margin-left: 0;
+    width: 200px;
+}
+#create_profile #bluetooth_detail li {
+    line-height: 30px;
+    text-align: left;
+    list-style: none; 
+}
+#create_profile #bluetooth_rule_detail li {
+    line-height: 30px;
+    text-align: left;
+    list-style: none;  
+    clear: both;
+}
+#create_profile #bluetooth_filter, #bluetooth_need_rule{
+    padding-left:16px; 
+    font-size:11px;
+}
+#create_profile #bluetooth_list, #bluetooth_rule, #bluetooth_detail, #bluetooth_rule_detail{
+    width:98%;
+    margin:0 auto;
+}
+/* Table specific */
+#create_profile .tmGrid{
+	background:#FFF;
+	border:1px #b2b2b2 solid;
+	margin-top: 0!important;
+	padding-right: 10px;
+	table-layout: fixed;
+	width:100%; 
+}
+
+/* Misc */
+#create_profile .tmGrid td {
+	/*overflow: hidden;
+	white-space: nowrap;*/
+	word-break: normal;
+    word-wrap: break-word;
+}
+#create_profile .tmGrid .clickable {
+	cursor: pointer;
+}
+/* Sizing row */
+#create_profile .tmGrid thead tr.sizing_row, .tmGrid thead .sizing_row th {
+	border: 0px;
+	height: 0px;
+	line-height: 0px;
+	margin: 0px;
+	overflow: none;
+	padding: 0px;
+}
+#create_profile .tmGrid  thead .sizing_row th:first-child {
+	width:25px;
+}
+
+/* Behavior button row */
+.mozilla #create_profile .tmGrid tr.behavior_button th {
+	background:#f5f5f5;
+	border-bottom: 1px solid #b2b2b2;
+	height: 29px;   
+	line-height: 29px;
+}
+
+#create_profile .tmGrid tr.behavior_button th {
+	background:#f5f5f5;
+	border-bottom: 1px solid #b2b2b2;
+	height: 30px;   
+	line-height: 30px;
+}
+#create_profile .tmGrid tr.behavior_button th ul {
+	height: 24px;
+}
+#create_profile .tmGrid tr.behavior_button th ul li{
+	height: 22px;
+	margin-top: 1px;
+}
+#create_profile .tmGrid tr.behavior_button th ul li span{
+	height: 22px;
+	line-height: 22px;	
+}
+
+#create_profile .panel .button_add_bluetooth {
+	background: url(../images/icon_add.png) no-repeat;
+}
+
+#create_profile .panel .button_delete_bluetooth {
+	background: url(../images/icon_delete.png) no-repeat;
+}
+#create_profile .panel .button_add_rule {
+	background: url(../images/icon_add.png) no-repeat;
+}
+#create_profile .panel .button_delete_rule {
+	background: url(../images/icon_delete.png) no-repeat;
+}
+
+/* General behavior CSS */
+#create_profile .tmGrid .behavior_button ul.button_group .list_container{
+	background-position: 3px center;
+	border: 1px solid #F5F5F5;
+	color: #000000;
+	cursor: pointer;
+	display: block;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	margin-bottom: 0px;
+	margin-top: -1px;
+	padding: 2px 5px;
+	padding-bottom: 0px;
+	padding-left: 25px;
+	padding-top: 0px;    
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-o-user-select: none;
+}
+#create_profile .tmGrid .behavior_button ul.button_group .list_container.hover  {
+	border: 1px solid #999999;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+#create_profile .tmGrid .behavior_button ul.button_group .list_container:hover  {
+	border: 1px solid #999999;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+#create_profile .tmGrid .behavior_button ul.button_group .button_disabled{
+	cursor: default;
+	filter: alpha(opacity=40);
+	opacity: 0.4;
+}
+#create_profile .tmGrid .behavior_button ul.button_group .button_disabled span.list_container:hover{
+	border:1px solid #F5F5F5;  
+	cursor: default;    
+}
+#create_profile .tmGrid  .behavior_button ul.button_group {
+	float: left;
+	margin-top: 2px;
+	padding-right: 4px;
+}
+#create_profile .tmGrid  .behavior_button ul.button_group li {
+	background: url("../images/tool_panel_div.png") no-repeat scroll right center transparent;
+	float: left;
+	margin-left: 4px;
+	padding-right: 7px;
+}
+
+#create_profile .tmGrid  .behavior_button ul.button_group li:last-child {
+	background: none;
+}
+/* Column Headers */
+#create_profile .tmGrid .header_title th{	
+	background: url('../images/tmGrid_thead_th_bk.png') repeat-x top left;
+	border-left: 1px #b2b2b2 solid;
+	border-bottom: 1px #b2b2b2 solid;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	height:24px;
+	line-height:24px;
+	overflow: hidden;
+	text-align:left;
+	vertical-align:middle;
+	white-space: nowrap;
+}
+#create_profile .tmGrid .header_title th:first-child{
+	border-left:none;
+}	
+#create_profile .tmGrid .header_title th.checkBoxAll{
+	padding:0px;
+	text-align:center;
+}
+#create_profile .tmGrid .header_title th.checkBoxAll input.check_all_checkbox{
+	vertical-align: middle;
+}
+#create_profile .tmGrid .header_title th div {
+	padding-left: 5px;
+}
+#create_profile .tmGrid .header_title .column_title {
+	height: 100%;
+	overflow: hidden;
+}
+#create_profile .tmGrid .header_title th.sort_asc .column_title {
+	background-image:url(../images/up_16.gif);
+	background-position: right 10px;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	cursor: pointer;
+}
+#create_profile .tmGrid .header_title th.sort_desc .column_title {
+	background:url(../images/down_16.gif) no-repeat right;
+	margin-right: 5px;
+	cursor: pointer;
+}
+/* Standard data rows */
+#create_profile .tmGrid tbody.row_container tr td {
+	border-left: 1px solid #dcdcdc;
+	border-top: 1px solid #dcdcdc;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	height:24px;
+	line-height:24px;
+	padding:0px 5px 0px 5px;
+	vertical-align:middle;	
+}
+#create_profile .tmGrid tbody.row_container tr td:first-child {
+	border-left: none;
+}
+#create_profile .tmGrid tbody.row_container tr td:first-child.checkBoxAll{
+	padding:0px;
+	text-align:center;
+}
+#create_profile .tmGrid tbody.row_container tr.tmAlignTop td {
+	vertical-align: top;
+}
+#create_profile .tmGrid tbody.row_container tr.tmAlignMiddle td {
+	vertical-align: middle;
+}
+#create_profile .tmGrid tbody.row_container tr.tmAlignBottom td {
+	vertical-align: bottom;
+}
+
+#create_profile .tmGrid tbody.row_container tr td.tmAlignTop {
+	vertical-align: top;
+}
+#create_profile .tmGrid tbody.row_container tr td.tmAlignLeft{
+	text-align: left;
+}
+#create_profile .tmGrid tbody.row_container tr td:first-child input.cbx  {
+	vertical-align:middle;
+}
+#create_profile .tmGrid tbody.row_container tr td  img{
+	vertical-align: middle;
+}
+#create_profile .tmGrid tbody.row_container tr td ul.sub_items {
+	margin: 0 -5px;	
+}
+#create_profile .tmGrid tbody.row_container tr td ul.sub_items>li {
+	border-top:1px solid #e7e7e7;	
+	padding:0px 5px;
+}
+#create_profile .tmGrid tbody.row_container tr td ul.sub_items>li:first-child{
+	border-top:none;	
+}
+
+#create_profile .tmGrid tbody.row_container tr td .sub_item a {
+	color:#0066CC;
+}
+
+/* Selected/hover row */
+#create_profile .tmGrid tbody.row_container tr.row_hover {
+	background-color:#e5effa;
+}
+#create_profile .tmGrid tbody.row_container tr:hover{
+	background:#e5effa;
+}
+#create_profile .tmGrid tbody.row_container tr.checked:hover {
+	background-color:#e5effa;
+}
+#create_profile .tmGrid tbody.row_container tr.checked {
+	background-color:#f2f7fc;
+}
+/* Footer row */
+#create_profile .tmGrid tfoot td{
+	background-color:#f5f5f5;	
+	border:none;	
+	border-top:1px #b2b2b2 solid;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	height:26px;
+	line-height:25px;
+	padding:0px;
+	text-align:right;
+}
+#create_profile .tmGrid th.ckb_cm{
+	padding-top:3px;
+	text-align:center;
+	width:20px;
+}
+#create_profile .tmGrid td.ckb_cm{
+	padding:0px;
+	padding-top:3px;
+	text-align:center;
+	width:20px;
+}
+/* Footer message for empty table */
+#create_profile .tmGrid .emptyTableMessage {
+	float: left;	
+	font: 12px Arial;
+	margin: 10px 30px;
+}
+#create_profile .tmGrid .emptyTableMessage .emptyTableLink {
+	color: #0066cc;
+	cursor: pointer;
+	text-decoration: underline;
+}
+#create_profile .tmGrid .emptyTableMessage .emptyTableLink:hover {
+	color: #ff0000;
+}
+#create_profile .tmGrid .emptyTableMessage .emptyTableMessageText {
+	white-space: normal;
+}
+/* Pagination */
+#create_profile .panel ul.detailLists .tmGrid tfoot td .pagination{
+	float:right;
+	height:26px;	
+	margin:0px;
+	padding-right:10px;
+	vertical-align:middle;
+}
+#create_profile .panel ul.detailLists .tmGrid .pagination li{	
+	float:left;		
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	height:26px;
+	margin-left:2px;
+	line-height:26px;	
+	min-height: 16px;
+}
+.mozilla #create_profile .tmGrid .pagination .pageInput, .mozilla .tmGrid .pagination  .per_page{
+	line-height:25px;    
+}
+#create_profile .panel ul.detailLists .tmGrid .pagination .pageInput, .tmGrid .pagination  .per_page{
+	line-height:24px;    
+}
+#create_profile .panel ul.detailLists .tmGrid .pagination .btn{
+	background:url(../images/pagination_btn.gif) no-repeat center;
+	cursor:pointer;
+	height:17px;
+	margin-top:4px;	
+	width:17px;
+}
+#create_profile .panel ul.detailLists .tmGrid .pagination .records{	
+	background: url("../images/tool_panel_div.png") no-repeat right center;
+	padding-right:10px;
+}
+#create_profile .panel ul.detailLists .tmGrid .pagination .btn_first{
+	background-position:0px -204px;
+}
+#create_profile .panel ul.detailLists .tmGrid .pagination .btn.btn_first_hover{
+	background-position:0px -221px;
+}
+#create_profile .panel ul.detailLists .tmGrid .pagination .btn_first.disabled{
+	background-position:0px -255px;
+	cursor: default;
+}
+#create_profile .panel ul.detailLists .tmGrid .pagination .btn.btn_prev{
+	background-position:0px -68px;
+}
+#create_profile .panel ul.detailLists .tmGrid .pagination .btn.btn_prev.disabled{
+	background-position:0px -119px;
+	cursor: default;
+}
+#create_profile .panel ul.detailLists .tmGrid .pagination .btn.btn_prev_hover{
+	background-position:0px -85px;
+}
+#create_profile .panel ul.detailLists .tmGrid .pagination .btn_next{	
+	background-position:0px 0px;
+}
+#create_profile .panel ul.detailLists .tmGrid .pagination .btn_next.disabled{	
+	background-position:0px -51px;
+	cursor: default;
+}
+#create_profile .panel ul.detailLists .tmGrid .pagination .btn_next_hover{	
+	background-position:0px -17px;
+}
+#create_profile .panel ul.detailLists .tmGrid .pagination .btn_last{
+	background-position:0px -136px;
+}	
+#create_profile .panel ul.detailLists .tmGrid .pagination .btn_last.disabled{
+	background-position:0px -187px;
+	cursor: default;
+}
+#create_profile .panel ul.detailLists .tmGrid .pagination .btn_last_hover{
+	background-position:0px -153px;
+}
+#create_profile .panel ul.detailLists .tmGrid .pagination .pager_current_page{	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	height:12px;
+	vertical-align:middle;
+	width:25px;    
+
+}
+#create_profile .panel ul.detailLists .tmGrid .pagination .pager_current_page{	
+}
+#create_profile .panel ul.detailLists .tmGrid .pagination  .per_page{    
+	background: url("../images/tool_panel_div.png") no-repeat left center;
+	padding-left: 5px;
+}
+#create_profile .panel ul.detailLists .tmGrid .pagination .per_page select{	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	vertical-align:middle;
+	width:50px;
+}
+/*Specific CSS*/
+#create_profile .tmGrid{
+	min-width:1178px;
+	border:none;
+}
+/*Panel Component*/
+#create_profile .panel {
+	border: 1px solid #B2B2B2;
+	clear: both;
+	/*min-width: 1178px;*/
+}
+#create_profile .panel h4.title, .panel div.title {
+	background-color: #F5F5F5;
+	border-bottom: 1px solid #DCDCDC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	height: 28px;
+	line-height: 28px;
+	padding-left: 10px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#create_profile .panel div.content {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding: 10px;
+}
+#create_profile .panel div.content ul.sections {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+#create_profile .panel div.content ul.sections>li {
+	border-bottom: 1px #b2b2b2 dashed;
+	padding: 8px 0px;
+}
+#create_profile .panel div.content ul.sections>li:first-child {
+	padding-top: 0px;
+}
+#create_profile .panel div.content ul.sections>li:last-child {
+	border-bottom: none;
+	padding-bottom: 0px;
+}
+#create_profile .panel div.content ul.sections>li.last {
+	border-bottom: none;
+	padding-bottom: 0px;
+}
+#create_profile .panel div.content .panel-bold {
+	font-weight: bold;
+}
+/*Specific*/
+#create_profile .panel.headerSetting, #create_profile .panel.footerSetting, #create_profile .panel.fontSetting {
+	margin-bottom: 20px;
+	/*margin-top: 20px;*/
+}
+#create_profile .panel ul.detailLists {
+}
+#create_profile .panel ul.detailLists li {
+	min-height: 30px;
+	line-height: 30px;
+}
+#create_profile .panel ul.detailLists li dt {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	float: left;
+    height: 30px;
+    line-height: 30px;
+    width: 120px;
+}
+#create_profile .panel ul.detailLists li input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 12px;
+	margin-left: 0px;
+	vertical-align: middle;
+}
+#create_profile .panel ul.detailLists li.dashedline{
+	border-bottom: 1px #b2b2b2 dashed;
+}
+
+#create_profile .panel ul.detailLists li select {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	height: 19px;
+	line-height: 19px;
+	margin-left: 0px;
+	vertical-align: middle;
+}
+#create_profile .panel ul.detailLists li .f_comment {
+	color: #999999;
+	margin-left: 100px;
+	clear: both;
+	height: 15px;
+	line-height: 15px;
+}
+/*step3 css*/
+#create_profile .clearboth{
+	clear:both;
+}
+
+
+/*globl css*/
+#create_profile .displaynone{
+	display:none;
+}
+</style>
+<style type="text/css">
+#create_profile .carousel {
+    /*
+	margin: 0 0 20px 10px;
+    padding: 10px 0 0;
+	*/
+	margin: 0 0 0 10px;
+    position: relative;
+}
+#create_profile .jCarouselLite {
+   /* background-color: #F5F5F5;
+    border: 1px solid #DCDCDC;*/
+	height:100px;
+    float: left;
+}
+#create_profile .carousel button {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	padding:0;
+    float: left;
+	height:96px !important;
+	width:20px;
+	margin:0 5px;
+}
+#create_profile .carousel li img, .carousel li p {
+    background-color: #FFFFFF;
+    height: 95px;
+    margin: 0 10px;
+    width: 75px;
+	cursor:pointer;
+}
+#create_profile .previewdiv{
+	/*float:left;
+	border: 1px solid #DCDCDC; */
+	margin-right: 20px;
+	background-color: #F5F5F5; 
+	padding: 70px 0;
+	height:150px;
+	display: inline;
+}
+#create_profile .previewdiv ul li a{
+	padding: 4px 9px;
+}
+#create_profile .carouselarea{
+	margin-top: 10px; margin-left: 270px;background-color: #F5F5F5;border: 1px solid #DCDCDC;width:660px;
+}
+#create_profile .carouselarea div.texttip{
+	margin-left:10px;
+}
+#create_profile .carouselarea div.uploadpic{
+	display:none;
+	margin-right: 24px;
+	background:url(../images/add_new_wall_paper.png) no-repeat scroll right top transparent;
+	width:75px; height:96px; float:left;
+}
+
+#create_profile .hmdm-app-summary {
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 1px 3px gray;
+    display: inline-block;
+    font-size: 12px;
+    height: 77px;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    width: 218px;
+}
+
+
+#create_profile .hmdm-app-summary .icon {
+    border-radius: 5px 5px 5px 5px;
+    height: 57px;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+    width: 57px;
+}
+
+#create_profile .hmdm-app-summary .name {
+    font-weight: bold;
+    left: 77px;
+    overflow: hidden;
+    position: absolute;
+    right: 5px;
+    text-overflow: ellipsis;
+    top: 12px;
+    white-space: nowrap;
+}
+
+
+#create_profile .hmdm-app-summary .summary {
+    left: 77px;
+    overflow: hidden;
+    position: absolute;
+    right: 5px;
+    text-overflow: ellipsis;
+    top: 32px;
+    white-space: nowrap;
+}
+
+#create_profile .hmdm-app-summary .description {
+    color: #666666;
+    font-size: 12px;
+    left: 77px;
+    overflow: hidden;
+    position: absolute;
+    right: 5px;
+    text-overflow: ellipsis;
+    top: 50px;
+    white-space: nowrap;
+}
+
+#create_profile .hmdm-app-summary .iconRow {
+    top: 55px;
+    position: absolute;
+    right: 4px;
+	display:none;
+}
+
+#create_profile .hmdm-app-summary input[type="checkbox"] {
+    left: 8px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0px;
+	border: 1px solid #BBBBBB;
+}
+
+#create_profile .hmdm-app-summary.is-hovering {
+    background-color: #EFF8FE;
+    border: 1px solid #B8D6FB;
+    box-shadow: 0 0 5px white inset, 1px 1px 3px #B8D6FB;
+}
+#create_profile .hmdm-app-summary.is-selected {
+    background-color: #DFECFD;
+    border: 1px solid #8BB1DE;
+    box-shadow: 0 0 5px white inset;
+}
+
+
+#create_profile .hmdm-app-summary .managedApp {
+    background-image: url("../images/icon_managed_app.png");
+    display: inline-block;
+    height: 18px;
+    position: relative;
+    width: 18px;
+	display:none;
+}
+
+#create_profile .ember-view{
+    margin-bottom: 10px;
+    margin-right: 10px;
+	float:left;
+	width:220px;
+	height:78px;
+}
+
+#create_profile .ember-checkbox{
+	display:none
+}
+
+#create_profile .ui-widget-header {	
+	background:#FFF;		
+	background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#E5E5E5));
+	background: -moz-linear-gradient(top,  #FAFAFA,  #E5E5E5);
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr="#FAFAFA", endColorStr="#E5E5E5", gradientType="0");
+	-moz-border-radius:0px;
+	-webkit-border-radius: 0px;
+    border: none;
+	border-bottom: 1px solid #DCDCDC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	height: 28px;
+	line-height: 28px;
+}
+
+/* General behavior CSS */
+#create_profile .buttongroup ul.button_group .list_container{
+	background-position: 3px center;
+	border: 1px solid #F5F5F5;
+	color: #000000;
+	cursor: pointer;
+	display: block;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	margin-bottom: 0px;
+	margin-top: -1px;
+	padding: 2px 5px;
+	padding-bottom: 0px;
+	padding-left: 25px;
+	padding-top: 0px;    
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-o-user-select: none;
+}
+#create_profile .buttongroup ul.button_group .list_container.hover  {
+	border: 1px solid #999999;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+#create_profile .buttongroup ul.button_group .list_container:hover  {
+	border: 1px solid #999999;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+#create_profile .buttongroup ul.button_group .button_disabled{
+	cursor: default;
+	filter: alpha(opacity=40);
+	opacity: 0.4;
+}
+#create_profile .buttongroup ul.button_group .button_disabled span.list_container:hover{
+	border:1px solid #F5F5F5;  
+	cursor: default;    
+}
+#create_profile .panel .button_add {
+	background: url(../images/icon_add.png) no-repeat;
+}
+#create_profile .panel .button_remove {
+	background: url(../images/icon_delete.png) no-repeat;
+}
+
+
+#create_profile .buttongroup ul.button_group {
+	float: left;
+	margin-top: 2px;
+	padding-right: 4px;
+}
+#create_profile .buttongroup ul.button_group li {
+	background: url("../images/tool_panel_div.png") no-repeat scroll right center transparent;
+	float: left;
+	margin-left: 4px;
+	padding-right: 7px;
+}
+#create_profile .buttongroup ul li span {
+    height: 22px;
+    line-height: 22px;
+}
+#create_profile .buttongroup ul.button_group li:last-child {
+	background: none;
+}
+
+#create_profile .redstar {
+	color:#F00!important;
+}
+#create_profile .clearfix:after {
+     content: ".";
+     display: block;
+     height: 0;
+     clear: both;
+     visibility: hidden;
+}
+
+
+#modalAddProfileApp .page_body {
+	padding: 0 10px;
+}
+#modalAddProfileApp .panel {
+	clear: both;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	/*width: 710px;*/
+	height: 380px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	border: medium none;
+}
+#modalAddProfileApp .title {
+	background-color: #f5f5f5;
+	border: 1px solid #DCDCDC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	/*height: 28px;*/
+	line-height: 28px;
+	padding-left: 10px;/*margin:5px 0;*/
+}
+#modalAddProfileApp .title input, .title button {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	height: 22px;
+	line-height: 12px;
+}
+#modalAddProfileApp .titlefix {
+	background-color: transparent;
+	border: none;
+}
+/************/
+#modalAddProfileApp .displaynone {
+	display: none;
+}
+#modalAddProfileApp .ui-corner-all {
+	/* cover firefox corder error.*/
+	border-radius: 0 0 0 0;
+}
+#modalAddProfileApp .hmdm-app-summary {
+	border: 1px solid grey;
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 1px 1px 3px gray;
+	display: inline-block;
+	font-size: 12px;
+	height: 77px;
+	overflow: hidden;
+	position: relative;
+	text-overflow: ellipsis;
+	width: 218px;
+}
+#modalAddProfileApp .hmdm-app-summary .icon {
+	border-radius: 5px 5px 5px 5px;
+	height: 57px;
+	left: 10px;
+	position: absolute;
+	top: 10px;
+	width: 57px;
+}
+#modalAddProfileApp .hmdm-app-summary .name {
+	font-weight: bold;
+	left: 77px;
+	overflow: hidden;
+	position: absolute;
+	right: 5px;
+	text-overflow: ellipsis;
+	top: 12px;
+	white-space: nowrap;
+}
+#modalAddProfileApp .hmdm-app-summary .summary {
+	left: 77px;
+	overflow: hidden;
+	position: absolute;
+	right: 5px;
+	text-overflow: ellipsis;
+	top: 32px;
+	white-space: nowrap;
+}
+#modalAddProfileApp .hmdm-app-summary .description {
+	color: #666666;
+	font-size: 12px;
+	left: 77px;
+	overflow: hidden;
+	position: absolute;
+	right: 5px;
+	text-overflow: ellipsis;
+	top: 52px;
+	white-space: nowrap;
+}
+#modalAddProfileApp .hmdm-app-summary .iconRow {
+	bottom: 2px;
+	position: absolute;
+	right: 4px;
+	display: none;
+}
+#modalAddProfileApp .hmdm-app-summary input[type="checkbox"] {
+	left: 8px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 8px;
+	border: 1px solid #BBBBBB;
+}
+#modalAddProfileApp .hmdm-app-summary.is-hovering {
+	background-color: #EFF8FE;
+	border: 1px solid #B8D6FB;
+	box-shadow: 0 0 5px white inset, 1px 1px 3px #B8D6FB;
+}
+#modalAddProfileApp .hmdm-app-summary.is-selected {
+	background-color: #DFECFD;
+	border: 1px solid #8BB1DE;
+	box-shadow: 0 0 5px white inset;
+}
+#modalAddProfileApp .hmdm-app-summary .links .store:active {
+	/*background: url("link-s8447998d1a.png") no-repeat scroll 0 0 transparent;*/
+}
+#modalAddProfileApp .hmdm-app-summary .managedApp {
+	background-image: url("../images/icon_managed_app.png");
+	display: inline-block;
+	height: 18px;
+	position: relative;
+	width: 18px;
+}
+#modalAddProfileApp .ember-view {
+	margin-bottom: 10px;
+	margin-right: 10px;
+	float: left;
+	width: 220px;
+	height: 78px;
+}
+#modalAddProfileApp .ember-checkbox {
+	display: none
+}
+#modalAddProfileApp .ui-widget-header {
+	background: #FFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#E5E5E5));
+	background: -moz-linear-gradient(top, #FAFAFA, #E5E5E5);
+	filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr="#FAFAFA", endColorStr="#E5E5E5", gradientType="0");
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border: none;
+	border-bottom: 1px solid #DCDCDC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	height: 28px;
+	line-height: 28px;
+}
+
+.modal-addapp{
+	/*width: 1040px;*/
+	/*height:540px;*/
+}
